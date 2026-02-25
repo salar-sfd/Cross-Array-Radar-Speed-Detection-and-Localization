@@ -2,21 +2,27 @@
 
 This project simulates a *cross-array* radar mounted on a highway median, detects vehicles, estimates their **range / radial speed / azimuth**, and converts detections into **(x, y) position / speed** to cue a center-mounted camera.
 
-<p align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="gifs/simulation.gif" height="400 alt="Simulation demo 1"/>
-        <figcaption><em>Simulation results</em></figcaption>
-      </td>
-      <td align="center">
-        <img src="gifs/range_doppler.gif" height="400" alt="Simulation demo 2"/>
-        <figcaption><em>Real-time range-doppler matrix</em></figcaption>
-      </td>
-    </tr>
-  </table>
-</p>
 
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="37%">
+      <figure style="margin:0;">
+        <img src="gifs/simulation.gif"
+             style="width:100%; height:260px; object-fit:contain;"
+             alt="Simulation results"/>
+        <figcaption><em>Simulation environment</em></figcaption>
+      </figure>
+    </td>
+    <td align="center" width="62%">
+      <figure style="margin:0;">
+        <img src="gifs/range_doppler.gif"
+             style="width:100%; height:260px; object-fit:contain;"
+             alt="Real-time range–Doppler matrix"/>
+        <figcaption><em>Real-time range–Doppler matrix</em></figcaption>
+      </figure>
+    </td>
+  </tr>
+</table>
 
 
 ## Contents
@@ -50,13 +56,6 @@ This project simulates a *cross-array* radar mounted on a highway median, detect
 4. Detect peaks
 5. Estimate **angle** via a spatial **Matching Pursuit (MP)** step
 6. Convert to **(x, y)** and estimate true speed from radial speed + geometry
-
-<figure align="center">
-  <img src="images/cross_array.jpg" width="400" alt="Cross-array geometry"/>
-  <figcaption><em>Figure: Cross-array geometry (Tx vertical arm, Rx horizontal arm).</em></figcaption>
-</figure>
-
-
 
 ## Key Design Parameters
 
@@ -96,20 +95,26 @@ The environment is a straight highway in the ground plane **(x, y)**:
 A base signal is modeled as a repeated **linear-FM (chirp)** pulse train. This signal is then transmitted via a pre-designed tx array (solving an optimization problem, which the code can be find in `src/Generate_Tx_Array.m`). By modeling the cars position and velocity, the reflected signal is then received by an rx array. (which its elements and positions are determind using `src/Generate_Rx_Array.m`)
 
 
-<p align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="images/cross_array.jpg" height="250" alt="Cross-array geometry"/>
-        <figcaption><em>Final Cross-array geometry.</em></figcaption>
-      </td>
-      <td align="center">
-        <img src="images/Designed_Tx_Pattern.jpg" height="400" alt="Cross-array geometry"/>
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <figure style="margin:0;">
+        <img src="images/Cross_Array.jpg"
+             style="width:100%; height:300px; object-fit:contain;"
+             alt="Final cross-array geometry"/>
+        <figcaption><em>Final cross-array geometry.</em></figcaption>
+      </figure>
+    </td>
+    <td align="center" width="50%">
+      <figure style="margin:0;">
+        <img src="images/Designed_Tx_Pattern.jpg"
+             style="width:100%; height:300px; object-fit:contain;"
+             alt="Designed Tx array pattern"/>
         <figcaption><em>Designed Tx Array Pattern.</em></figcaption>
-      </td>    
-    </tr>
-  </table>
-</p>
+      </figure>
+    </td>
+  </tr>
+</table>
 
 ### 3) Range–Doppler Processing
 
