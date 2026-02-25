@@ -96,14 +96,14 @@ A base signal is modeled as a repeated **linear-FM (chirp)** pulse train. This s
   <tr>
     <td align="center" width="50%">
       <img src="images/Cross_Array.jpg"
-           style="width:100%; height:300px; object-fit:contain;"
+           style="height:300px; width:auto; max-width:100%; object-fit:contain;"
            alt="Final cross-array geometry"/>
       <br/>
       <sub><em>Final cross-array geometry.</em></sub>
     </td>
     <td align="center" width="50%">
       <img src="images/Designed_Tx_Pattern.jpg"
-           style="width:100%; height:300px; object-fit:contain;"
+           style="height:300px; width:auto; max-width:100%; object-fit:contain;"
            alt="Designed Tx Array Pattern"/>
       <br/>
       <sub><em>Designed Tx Array Pattern.</em></sub>
