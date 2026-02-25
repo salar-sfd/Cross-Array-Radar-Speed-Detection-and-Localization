@@ -6,20 +6,18 @@ This project simulates a *cross-array* radar mounted on a highway median, detect
 <table align="center" width="100%">
   <tr>
     <td align="center" width="37%">
-      <figure style="margin:0;">
-        <img src="gifs/simulation.gif"
-             style="width:100%; height:260px; object-fit:contain;"
-             alt="Simulation results"/>
-        <figcaption><em>Simulation environment</em></figcaption>
-      </figure>
+      <img src="gifs/simulation.gif"
+           style="width:100%; height:260px; object-fit:contain;"
+           alt="Simulation results"/>
+      <br/>
+      <sub><em>Simulation environment</em></sub>
     </td>
     <td align="center" width="62%">
-      <figure style="margin:0;">
-        <img src="gifs/range_doppler.gif"
-             style="width:100%; height:260px; object-fit:contain;"
-             alt="Real-time range–Doppler matrix"/>
-        <figcaption><em>Real-time range–Doppler matrix</em></figcaption>
-      </figure>
+      <img src="gifs/range_doppler.gif"
+           style="width:100%; height:260px; object-fit:contain;"
+           alt="Real-time range–Doppler matrix"/>
+      <br/>
+      <sub><em>Real-time range–Doppler matrix</em></sub>
     </td>
   </tr>
 </table>
@@ -94,13 +92,12 @@ The environment is a straight highway in the ground plane **(x, y)**:
 
 A base signal is modeled as a repeated **linear-FM (chirp)** pulse train. This signal is then transmitted via a pre-designed tx array (solving an optimization problem, which the code can be find in `src/Generate_Tx_Array.m`). By modeling the cars position and velocity, the reflected signal is then received by an rx array. (which its elements and positions are determind using `src/Generate_Rx_Array.m`)
 
-
 <table align="center" width="100%">
   <tr>
     <td align="center" width="50%">
       <figure style="margin:0;">
-        <img src="images/Cross_Array.jpg"
-             style="width:100%; height:300px; object-fit:contain;"
+        <img src="images/cross_array.jpg"
+             style="height:300px; width:auto; max-width:100%;"
              alt="Final cross-array geometry"/>
         <figcaption><em>Final cross-array geometry.</em></figcaption>
       </figure>
@@ -108,7 +105,7 @@ A base signal is modeled as a repeated **linear-FM (chirp)** pulse train. This s
     <td align="center" width="50%">
       <figure style="margin:0;">
         <img src="images/Designed_Tx_Pattern.jpg"
-             style="width:100%; height:300px; object-fit:contain;"
+             style="height:300px; width:auto; max-width:100%;"
              alt="Designed Tx array pattern"/>
         <figcaption><em>Designed Tx Array Pattern.</em></figcaption>
       </figure>
