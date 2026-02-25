@@ -94,7 +94,7 @@ A base signal is modeled as a repeated **linear-FM (chirp)** pulse train. This s
 
 <table align="center" width="100%">
   <tr>
-    <td align="center" width="35%">
+    <td align="center" width="40%">
       <div style="width:100%; height:300px; display:flex; align-items:center; justify-content:center;">
         <img src="images/Cross_Array.jpg"
              style="max-width:100%; max-height:100%; width:auto; height:auto;"
@@ -102,7 +102,7 @@ A base signal is modeled as a repeated **linear-FM (chirp)** pulse train. This s
       </div>
       <sub><em>Final cross-array geometry.</em></sub>
     </td>
-    <td align="center" width="65%">
+    <td align="center" width="60%">
       <div style="width:100%; height:300px; display:flex; align-items:center; justify-content:center;">
         <img src="images/Designed_Tx_Pattern.jpg"
              style="max-width:100%; max-height:100%; width:auto; height:auto;"
