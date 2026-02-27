@@ -174,4 +174,4 @@ cd Cross-Array-Radar-Speed-Detection-and-Localization
 addpath(genpath(pwd));
 ```
 
-3) Run a top-level simulation script from `scripts/main.m`:
+3) Run a top-level simulation script from: `scripts/main.m`
