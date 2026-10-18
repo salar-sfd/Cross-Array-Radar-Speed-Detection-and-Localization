@@ -57,7 +57,6 @@ This project simulates a *cross-array* radar mounted on a highway median, detect
 
 ## Key Design Parameters
 
-> These are the **default/reference** parameters used.
 
 ### Radar / Processing
 - Carrier frequency: **2 GHz**
